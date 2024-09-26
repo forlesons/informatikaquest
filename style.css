@@ -1,0 +1,43 @@
+#Mainh1 {
+    position: relative;
+    animation-name: Anim1;
+    animation-duration: 1s;
+}
+
+#Creatorh2 {
+    position: relative;
+    animation-name: Anim2;
+    animation-duration: 3s;
+}
+
+#ImgInformatika {
+    position: relative;
+    animation-name: Anim3;
+    animation-duration: 5s;
+    right: 0%;
+    position: absolute;
+    top: 2.3%;
+    width: 50%;
+    height: 51.7%;
+}
+
+#Div1 {
+    width: 50%;
+    height: 500px;
+}
+
+@keyframes Anim1 {
+    0% { left: -600px; }
+    100% { left: 0px; }
+}
+
+@keyframes Anim2 {
+    0% { left: -600px; }
+    100% { left: 0px; }
+}
+
+@keyframes Anim3 {
+    0% { top: -600px; }
+    50% { top: -600px; }
+    100% { top: 2.3%; }
+}
