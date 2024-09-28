@@ -1,19 +1,35 @@
 #Mainh1 {
+    top: 0px;
     position: relative;
     animation-name: Anim1;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
+}
+
+#Mainh1.EndMainh1 {
+    top: -600px;
+    position: relative;
+    animation-name: EndMainh1Anim;
+    animation-duration: 2s;
 }
 
 #Creatorh2 {
+    top: 0px;
     position: relative;
     animation-name: Anim2;
     animation-duration: 3s;
 }
 
+#Creatorh2.EndCreatorh2 {
+    top: -600px;
+    position: relative;
+    animation-name: EndCreatorh2Anim;
+    animation-duration: 2s;
+}
+
 #ImgInformatika {
     position: relative;
     animation-name: Anim3;
-    animation-duration: 5s;
+    animation-duration: 4s;
     right: 0%;
     position: absolute;
     top: 2.3%;
@@ -21,9 +37,53 @@
     height: 51.7%;
 }
 
+#ImgInformatika.EndImgInformatika {
+    animation-name: EndImgInformatikaAnim;
+    animation-duration: 2s;
+    top: -600px;
+}
+
 #Div1 {
     width: 50%;
     height: 500px;
+    position: relative;
+    animation-name: StartDiv1Anim;
+    animation-duration: 2s;
+}
+
+#Div1.EndDiv1 {
+    animation-name: EndDiv1Anim;
+    animation-duration: 1.5s;
+    height: 0px;
+}
+
+#StartQuest {
+    animation-name: LoadButtonStartQuestAnim;
+    animation-duration: 5s;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 450px;
+    left: 10px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border-color: aqua;
+    border-style: inset;
+    transition-property: all;
+    transition: 0.7s
+}
+
+#StartQuest:hover {
+    width: 205px;
+    height: 55px;
+    background-color: aqua;
+    transition: 0.7s;
+}
+
+#StartQuest.EndStartQuest {
+    animation-name: ButtonStartQuestAnim;
+    animation-duration: 2s;
+    top: -600px;
 }
 
 @keyframes Anim1 {
@@ -40,4 +100,45 @@
     0% { top: -600px; }
     50% { top: -600px; }
     100% { top: 2.3%; }
+}
+
+@keyframes StartDiv1Anim {
+    0% { width: 0%; height: 0px;}
+    100% { width: 50%; height: 500px;}
+} 
+
+@keyframes LoadButtonStartQuestAnim {
+    0% { left: -600px; }
+    50% { left: -600px; }
+    100% { left: 10px; }
+}
+
+@keyframes ButtonStartQuestAnim {
+    0% { top: 450px; }
+    20% { top: 460px; }
+    100% { top: -600px; }
+}
+
+@keyframes EndDiv1Anim {
+    0% { height: 500px; }
+    20% { height: 510px; }
+    100% { height: 0px; }
+}
+
+@keyframes EndMainh1Anim {
+    0% { top: 0px; }
+    20% { top: 10px; }
+    100% { top: -600px; }
+}
+
+@keyframes EndCreatorh2Anim {
+    0% { top: 0px; }
+    20% { top: 10px; }
+    100% { top: -600px; }
+}
+
+@keyframes EndImgInformatikaAnim {
+    0% { top: 2.3%; }
+    20% { top: 2.5%; }
+    100% { top: -600px; }
 }
