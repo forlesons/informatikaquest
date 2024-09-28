@@ -34,7 +34,7 @@
     position: absolute;
     top: 2.3%;
     width: 50%;
-    height: 51.7%;
+    height: 50cap;
 }
 
 #ImgInformatika.EndImgInformatika {
@@ -45,7 +45,7 @@
 
 #Div1 {
     width: 50%;
-    height: 500px;
+    height:50cap;
     position: relative;
     animation-name: StartDiv1Anim;
     animation-duration: 2s;
