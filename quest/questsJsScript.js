@@ -1,4 +1,4 @@
-document.cookie = "user=sajdmoasd; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
+document.cookie = "completedQuests=; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
 
 function getCookie(name) {
     let matches = document.cookie.match(new RegExp(
@@ -35,7 +35,7 @@ function setCookie(name, value, options = {}) {
   }
   
   // Пример использования:
-  setCookie('user', 'MaksNosov', {secure: true, 'max-age': 3600});
+  setCookie('completedQuests', '4', {secure: true, 'max-age': 3600});
 
 // возвращает куки с указанным name,
 // или undefined, если ничего не найдено
@@ -46,4 +46,4 @@ function getCookie(name) {
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 
-alert(getCookie("user"));
+alert(getCookie("completedQuests"));
