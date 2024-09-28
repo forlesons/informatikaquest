@@ -1,4 +1,4 @@
-document.cookie = "username=MaksNosov; expires=Thu, 18 Dec 2024 12:00:00 UTC; path=/";
+document.cookie = "user=MaksNosov; expires=Thu, 18 Dec 2024 12:00:00 UTC; path=/";
 
 // возвращает куки с указанным name,
 // или undefined, если ничего не найдено
