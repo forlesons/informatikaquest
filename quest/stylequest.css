@@ -1,0 +1,13 @@
+#BackImg {
+    width: 5%;
+    height: 5%;
+    position: relative;
+    animation-name: ShowBackImgAnim;
+    animation-duration: 2s;
+}
+
+@keyframes ShowBackImgAnim {
+    0% { top: -600px; }
+    80% { top: 5px; }
+    100% { top: 0px; }
+}
