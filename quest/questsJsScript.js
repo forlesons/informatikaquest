@@ -1,4 +1,13 @@
-document.cookie = "user=MaksNosov; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
+document.cookie = "user=sajdmoasd; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
+
+function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+alert(getCookie("user"));
 
 function setCookie(name, value, options = {}) {
 
