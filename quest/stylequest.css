@@ -6,6 +6,92 @@
     animation-duration: 2s;
 }
 
+#QuestOne {
+    position: absolute;
+    border-radius: 100%;
+    border-style: none;
+    background-color: darkgrey;
+    width: 30px;
+    height: 30px;
+    top: 20%;
+}
+#QuestTwo {
+    position: absolute;
+    border-radius: 100%;
+    border-style: none;
+    background-color: darkgrey;
+    width: 30px;
+    height: 30px;
+    top: 25%;
+}
+#QuestThree {
+    position: absolute;
+    border-radius: 100%;
+    border-style: none;
+    background-color: darkgrey;
+    width: 30px;
+    height: 30px;
+    top: 30%;
+}
+#QuestFo {
+    position: absolute;
+    border-radius: 100%;
+    border-style: none;
+    background-color: darkgrey;
+    width: 30px;
+    height: 30px;
+    top: 35%;
+}
+#QuestFive {
+    position: absolute;
+    border-radius: 100%;
+    border-style: none;
+    background-color: darkgrey;
+    width: 30px;
+    height: 30px;
+    top: 40%;
+}
+#QuestSix {
+    position: absolute;
+    border-radius: 100%;
+    border-style: none;
+    background-color: darkgrey;
+    width: 30px;
+    height: 30px;
+    top: 45%;
+}
+#QuestSeven {
+    position: absolute;
+    border-radius: 100%;
+    border-style: none;
+    background-color: darkgrey;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+}
+#QuestEight {
+    position: absolute;
+    border-radius: 100%;
+    border-style: none;
+    background-color: darkgrey;
+    width: 30px;
+    height: 30px;
+    top: 55%;
+}
+#QuestNine {
+    position: absolute;
+    border-radius: 100%;
+    border-style: none;
+    background-color: darkgrey;
+    width: 30px;
+    height: 30px;
+    top: 60%;
+}
+
+#DivQuests {
+    height: 90%;
+}
+
 @keyframes ShowBackImgAnim {
     0% { top: -600px; }
     80% { top: 5px; }
