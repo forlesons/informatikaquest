@@ -1,4 +1,4 @@
-var CompletedQuests = "";
+var CompletedQuests = new Array();
 
 function setCookie(name, value, options = {}) {
 
@@ -39,6 +39,12 @@ try {
   getCookie("completedQuests")
 } catch(a) {
   document.cookie = "completedQuests=; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
+}
+
+alert(getCiokie("completedQuests").split(","))
+
+for (int i = 0; i < 9; i++) {
+    CompletedQuest += "";
 }
 
 if (getCookie("CompletedQuests") == "1") {
