@@ -43,7 +43,7 @@ try {
 
 alert(getCookie("completedQuests").split(","));
 
-CompletedQuests[0] = getCookie("completedQuests").split(",")[0];
+CompletedQuests[0] = getCookie("completedQuests").toString().split(",")[0];
 
 if (CompletedQuests[0] == "True") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
