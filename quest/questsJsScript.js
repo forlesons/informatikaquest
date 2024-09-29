@@ -1,7 +1,5 @@
 var CompletedQuests = "";
 
-document.cookie = "completedQuests=; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
-
 function setCookie(name, value, options = {}) {
 
     options = {
@@ -35,6 +33,12 @@ function getCookie(name) {
       "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
     ));
     return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+try {
+  getCookie("completedQuests")
+} catch(a) {
+  document.cookie = "completedQuests=; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
 }
 
 if (getCookie("CompletedQuests") == "1") {
