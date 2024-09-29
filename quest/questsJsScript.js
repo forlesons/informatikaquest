@@ -49,29 +49,29 @@ alert(CompletedQuests);
 
 if (CompletedQuests[0] == "True") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
-  //CompletedQuests = "1";
     alert("ok")
 }
-if (getCookie("CompletedQuests") == "1,2") {
-  document.getElementById("QuestOne").style.backgroundColor = "green"
+if (CompletedQuests[1] == "True") {
   document.getElementById("QuestTwo").style.backgroundColor = "green"
-  CompletedQuests = "1,2";
 }
-if (getCookie("CompletedQuests") == "1,2,3") {
-  document.getElementById("QuestOne").style.backgroundColor = "green"
-  document.getElementById("QuestTwo").style.backgroundColor = "green"
+if (CompletedQuests[2] == "True") {
   document.getElementById("QuestThree").style.backgroundColor = "green"
-  CompletedQuests = "1,2,3";
 }
 
 alert(getCookie("completedQuests"));
 
 document.getElementById("CheckButton").onclick = function() {
-    if (document.getElementById("InputFromQuest1").value == "Видеокарта" && CompletedQuests == "") {
+    if (document.getElementById("InputFromQuest1").value == "Видеокарта" && CompletedQuests[0] == "False") {
       document.getElementById("VideocardImg").src = "materinskayaplata.jpg";
-      setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+      //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestOne").style.backgroundColor = "green"
       CompletedQuests[0] = "True"
+    }
+    if (document.getElementById("InputFromQuest1").value == "Видеокарта" && CompletedQuests[0] == "True") {
+      document.getElementById("VideocardImg").src = "materinskayaplata.jpg";
+      //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+      document.getElementById("QuestOne").style.backgroundColor = "green"
+      CompletedQuests[1] = "True"
     }
 }
 alert(CompletedQuests)
