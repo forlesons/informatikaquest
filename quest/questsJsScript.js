@@ -41,7 +41,8 @@ try {
   document.cookie = "completedQuests=; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
 }
 
-alert(getCiokie("completedQuests").split(","))
+alert(getCiokie("completedQuests").split(","));
+CompletedQuests = getCiokie("completedQuests").split(",");
 
 if (getCookie("CompletedQuests") == "1") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
