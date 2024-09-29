@@ -42,7 +42,7 @@ try {
 }
 
 alert(getCookie("completedQuests").split(","));
-CompletedQuests = getCookie("completedQuests").split(",");
+//CompletedQuests = getCookie("completedQuests").split(",");
 
 if (getCookie("CompletedQuests") == "1") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
