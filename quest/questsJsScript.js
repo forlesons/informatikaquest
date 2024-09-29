@@ -43,10 +43,6 @@ try {
 
 alert(getCiokie("completedQuests").split(","))
 
-for (int i = 0; i < 9; i++) {
-    CompletedQuest += "";
-}
-
 if (getCookie("CompletedQuests") == "1") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
   CompletedQuests = "1";
