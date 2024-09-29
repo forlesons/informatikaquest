@@ -41,7 +41,7 @@ try {
   document.cookie = "completedQuests=False,False,False,False,False,False,False,False,False; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
 }
 
-alert(getCookie("completedQuests").split(","));
+alert(getCookie("completedQuests").toString().split(","));
 
 CompletedQuests[0] = getCookie("completedQuests").toString().split(",")[0];
 
