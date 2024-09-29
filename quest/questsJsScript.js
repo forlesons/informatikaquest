@@ -41,9 +41,11 @@ try {
   document.cookie = "completedQuests=False,False,False,False,False,False,False,False,False; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
 }
 
-alert(getCookie("completedQuests").toString().split(","));
+for (var i=0; i<9; i++) {
+  CompletedQuests[i] = getCookie("completedQuests").toString().split(",")[i];
+}
 
-CompletedQuests[0] = getCookie("completedQuests").toString().split(",")[0];
+alert(getCookie("completedQuests").toString().split(","));
 
 if (CompletedQuests[0] == "True") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
