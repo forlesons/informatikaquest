@@ -38,11 +38,11 @@ function getCookie(name) {
 try {
   getCookie("completedQuests")
 } catch(a) {
-  document.cookie = "completedQuests=; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
+  document.cookie = "completedQuests=False,False,False,False,False,False,False,False,False; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
 }
 
 alert(getCookie("completedQuests").split(","));
-//CompletedQuests = getCookie("completedQuests").split(",");
+CompletedQuests = getCookie("completedQuests").split(",");
 
 if (getCookie("CompletedQuests") == "1") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
