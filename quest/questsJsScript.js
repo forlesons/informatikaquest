@@ -45,7 +45,7 @@ for (var i=0; i<9; i++) {
   CompletedQuests[i] = getCookie("completedQuests").toString().split(",")[i];
 }
 
-alert(getCookie("completedQuests").toString().split(","));
+alert(CompletedQuests);
 
 if (CompletedQuests[0] == "True") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
