@@ -44,9 +44,10 @@ try {
 alert(getCookie("completedQuests").split(","));
 CompletedQuests = getCookie("completedQuests").split(",");
 
-if (getCookie("CompletedQuests") == "1") {
+if CompletedQuests[0] == "True") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
-  CompletedQuests = "1";
+  //CompletedQuests = "1";
+    alert("ok")
 }
 if (getCookie("CompletedQuests") == "1,2") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
@@ -65,9 +66,9 @@ alert(getCookie("completedQuests"));
 document.getElementById("CheckButton").onclick = function() {
     if (document.getElementById("InputFromQuest1").value == "Видеокарта" && CompletedQuests == "") {
       document.getElementById("VideocardImg").src = "materinskayaplata.jpg";
-      setCookie('completedQuests', '1', {secure: true, 'max-age': 3600})
+      setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestOne").style.backgroundColor = "green"
-      CompletedQuests = "1"
+      CompletedQuests[0] = "True"
     }
 }
 alert(CompletedQuests)
