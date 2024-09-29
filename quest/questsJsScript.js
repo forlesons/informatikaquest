@@ -58,7 +58,7 @@ alert(getCookie("completedQuests"));
 document.getElementById("CheckButton").onclick = function() {
     if (document.getElementById("InputFromQuest1").value == "Видеокарта") {
       document.getElementById("VideocardImg").className = "VideocardImgEnd";
-      setCookie('completedQuest', '1', {secure: true, 'max-age': 3600})
+      setCookie('completedQuests', '1', {secure: true, 'max-age': 3600})
       document.getElementById("QuestOne").style.backgroundColor = "green"
     }
 }
