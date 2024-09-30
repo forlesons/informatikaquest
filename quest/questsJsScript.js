@@ -43,6 +43,7 @@ try {
 } catch(a) {
   document.cookie = "completedQuests=False,False,False,False,False,False,False,False,False; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
 }
+var CompletedQuests = new Array("False","False","False","False","False","False","False","False","False",);
 try {
   for (var i=0; i<9; i++) {
   CompletedQuests[i] = getCookie("completedQuests").toString().split(",")[i];
