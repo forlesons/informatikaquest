@@ -36,7 +36,7 @@ function getCookie(name) {
 }
 
 try {
-    setCookie('completedQuests', CompletedQuests, {secure: true, 'max-age': 3600})
+    //setCookie('completedQuests', CompletedQuests, {secure: true, 'max-age': 3600})
   for (var i=0; i<9; i++) {
   CompletedQuests[i] = getCookie("completedQuests").toString().split(",")[i];
   }
@@ -83,7 +83,7 @@ document.getElementById("CheckButton").onclick = function() {
     if (document.getElementById("InputFromQuest1").value == "Процессор" && CompletedQuests[2] == "False") {
       document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
-      document.getElementById("QuestTwo").style.backgroundColor = "green"
+      document.getElementById("QuestThree").style.backgroundColor = "green"
       CompletedQuests[2] = "True"
     }
     var SaveQuest = "";
