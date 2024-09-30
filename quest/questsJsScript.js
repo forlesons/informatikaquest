@@ -79,7 +79,7 @@ document.getElementById("CheckButton").onclick = function() {
       document.getElementById("QuestTwo").style.backgroundColor = "green"
       CompletedQuests[1] = "True"
     }
-    var SaveQuest;
+    var SaveQuest = "";
 for (var i=0; i<0; i++) {
     SaveQuest += CompletedQuests[i];
 }
