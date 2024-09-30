@@ -36,14 +36,20 @@ function getCookie(name) {
 }
 
 try {
-  getCookie("completedQuests")
+  for (var i=0; i<9; i++) {
+  CompletedQuests[i] = getCookie("completedQuests").toString().split(",")[i];
+  }
+} catch(a) {
+  document.cookie = "completedQuests=False,False,False,False,False,False,False,False,False; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
+}
+try {
+  for (var i=0; i<9; i++) {
+  CompletedQuests[i] = getCookie("completedQuests").toString().split(",")[i];
+  }
 } catch(a) {
   document.cookie = "completedQuests=False,False,False,False,False,False,False,False,False; expires=Tue, 18 Dec 2024 12:00:00 UTC; path=/";
 }
 
-for (var i=0; i<9; i++) {
-  CompletedQuests[i] = getCookie("completedQuests").toString().split(",")[i];
-}
 
 alert(CompletedQuests);
 
@@ -62,16 +68,21 @@ alert(getCookie("completedQuests"));
 
 document.getElementById("CheckButton").onclick = function() {
     if (document.getElementById("InputFromQuest1").value == "Видеокарта" && CompletedQuests[0] == "False") {
-      document.getElementById("VideocardImg").src = "materinskayaplata.jpg";
+      document.getElementById("VideocardImg").src = "quest/materinskayaplata.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestOne").style.backgroundColor = "green"
       CompletedQuests[0] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value == "Видеокарта" && CompletedQuests[0] == "True") {
+    if (document.getElementById("InputFromQuest1").value == "Материнская плата" && CompletedQuests[1] == "True") {
       //document.getElementById("VideocardImg").src = "quest/materinskayaplata.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
-      document.getElementById("QuestOne").style.backgroundColor = "green"
+      document.getElementById("QuestTwo").style.backgroundColor = "green"
       CompletedQuests[1] = "True"
     }
+    var SaveQuest;
+for (var i=0; i<0; i++) {
+    SaveQuest += CompletedQuests[i];
+}
+setCookie('completedQuests', SaveQuest, {secure: true, 'max-age': 10000})
 }
 alert(CompletedQuests)
