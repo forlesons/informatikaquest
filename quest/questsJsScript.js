@@ -95,63 +95,63 @@ if (CompletedQuests[8] == "True") {
 alert(getCookie("completedQuests"));
 
 document.getElementById("CheckButton").onclick = function() {
-    if (document.getElementById("InputFromQuest1").value == "Видеокарта" && CompletedQuests[0] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "видеокарта" && CompletedQuests[0] == "False") {
       document.getElementById("VideocardImg").src = "quest/materinskayaplata.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestOne").style.backgroundColor = "green"
       document.getElementById("QuestTwo").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[0] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value == "Материнская плата" && CompletedQuests[1] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "материнская плата" && CompletedQuests[1] == "False") {
       document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestTwo").style.backgroundColor = "green"
         document.getElementById("QuestThree").style.backgroundColor = "rgb(56, 56, 56)"
       CompletedQuests[1] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value == "Процессор" && CompletedQuests[2] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "процессор" && CompletedQuests[2] == "False") {
       document.getElementById("VideocardImg").src = "quest/Site.html.png";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestThree").style.backgroundColor = "green"
     document.getElementById("QuestFo").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[2] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value == ".html" && CompletedQuests[3] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "html" && CompletedQuests[3] == "False") {
       document.getElementById("VideocardImg").src = "quest/Quests.txt.png";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestFo").style.backgroundColor = "green"
       document.getElementById("QuestFive").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[3] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value == ".txt" && CompletedQuests[4] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "txt" && CompletedQuests[4] == "False") {
       document.getElementById("VideocardImg").src = "quest/directories.png";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestFive").style.backgroundColor = "green"
       document.getElementById("QuestSix").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[4] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value == "Матеша.txt" && CompletedQuests[5] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "матеша.txt" && CompletedQuests[5] == "False") {
       document.getElementById("VideocardImg").src = "quest/adobePhotoshop.png";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestSix").style.backgroundColor = "green"
       document.getElementById("QuestSeven").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[5] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value == "Прикладное по" && CompletedQuests[6] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "прикладное по" && CompletedQuests[6] == "False") {
       document.getElementById("VideocardImg").src = "quest/win.png";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestSeven").style.backgroundColor = "green"
       document.getElementById("QuestEight").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[6] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value == "Системное по" && CompletedQuests[7] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "системное по" && CompletedQuests[7] == "False") {
       document.getElementById("VideocardImg").src = "quest/vsCode.png";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestEight").style.backgroundColor = "green"
       document.getElementById("QuestNine").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[7] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value == "система программирования" && CompletedQuests[8] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "система программирования" && CompletedQuests[8] == "False") {
       document.getElementById("VideocardImg").src = "quest/vsCode.png";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestNine").style.backgroundColor = "green"
@@ -166,6 +166,62 @@ for (var i=0; i<9; i++) {
         SaveQuest += CompletedQuests[i];
     }
 }
+
+document.getElementById("QuestOne").onclick = function() {
+  document.getElementById("VideocardImg").src = "quest/videocard.jpg";
+  //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+  document.getElementById("QuestOne").style.backgroundColor = "rgb(56, 56, 56)"
+  CompletedQuests[0] = "False"
+}
+document.getElementById("QuestTwo").onclick = function() {
+  document.getElementById("VideocardImg").src = "quest/materinskayaplata.jpg";
+  //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+  document.getElementById("QuestTwo").style.backgroundColor = "rgb(56, 56, 56)"
+  CompletedQuests[1] = "False"
+}
+document.getElementById("QuestThree").onclick = function() {
+  document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
+  //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+  document.getElementById("QuestThree").style.backgroundColor = "rgb(56, 56, 56)"
+  CompletedQuests[2] = "False"
+}
+document.getElementById("QuestFo").onclick = function() {
+  document.getElementById("VideocardImg").src = "quest/Site.html.png";
+  //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+  document.getElementById("Questone").style.backgroundColor = "rgb(56, 56, 56)"
+  CompletedQuests[3] = "False"
+}
+document.getElementById("QuestFive").onclick = function() {
+  document.getElementById("VideocardImg").src = "quest/Quests.txt.png";
+  //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+  document.getElementById("QuestFive").style.backgroundColor = "rgb(56, 56, 56)"
+  CompletedQuests[4] = "False"
+}
+document.getElementById("QuestSix").onclick = function() {
+  document.getElementById("VideocardImg").src = "quest/directories.png";
+  //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+  document.getElementById("QuestSix").style.backgroundColor = "rgb(56, 56, 56)"
+  CompletedQuests[5] = "False"
+}
+document.getElementById("QuestSeven").onclick = function() {
+  document.getElementById("VideocardImg").src = "quest/adobePhotoshop.png";
+  //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+  document.getElementById("QuestSeven").style.backgroundColor = "rgb(56, 56, 56)"
+  CompletedQuests[6] = "False"
+}
+document.getElementById("QuestEight").onclick = function() {
+  document.getElementById("VideocardImg").src = "quest/win.png";
+  //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+  document.getElementById("QuestEight").style.backgroundColor = "rgb(56, 56, 56)"
+  CompletedQuests[7] = "False"
+}
+document.getElementById("QuestNine").onclick = function() {
+  document.getElementById("VideocardImg").src = "quest/vsCode.png";
+  //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
+  document.getElementById("QuestNine").style.backgroundColor = "rgb(56, 56, 56)"
+  CompletedQuests[8] = "False"
+}
+
 alert(SaveQuest)
     setCookie('completedQuests', SaveQuest.replace("undefined", ""), {secure: true, 'max-age': 3600})
 }
