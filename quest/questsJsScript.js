@@ -37,7 +37,7 @@ function getCookie(name) {
 
 try {
     //setCookie('completedQuests', CompletedQuests, {secure: true, 'max-age': 3600})
-  for (var i=0; i<9; i++) {
+  for (var i=0; i<10; i++) {
   CompletedQuests[i] = getCookie("completedQuests").toString().split(",")[i];
   }
 } catch(a) {
@@ -45,7 +45,7 @@ try {
 }
 var CompletedQuests = new Array("False","False","False","False","False","False","False","False","False",);
 try {
-  for (var i=0; i<9; i++) {
+  for (var i=0; i<10; i++) {
   CompletedQuests[i] = getCookie("completedQuests").toString().split(",")[i];
   }
 } catch(a) {
@@ -132,7 +132,7 @@ document.getElementById("CheckButton").onclick = function() {
       CompletedQuests[8] = "True"
     }
     var SaveQuest = "";
-for (var i=0; i<9; i++) {
+for (var i=0; i<10; i++) {
     if (i < 8) {
     SaveQuest += CompletedQuests[i] + ",";
     }
