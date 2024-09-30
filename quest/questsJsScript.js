@@ -84,6 +84,6 @@ for (var i=0; i<0; i++) {
     SaveQuest += CompletedQuests[i];
 }
 alert(SaveQuest)
-    setCookie('completedQuests', SaveQuest, {secure: true, 'max-age': 10000})
+    setCookie('completedQuests', SaveQuest, {secure: true, 'max-age': 3600})
 }
 alert(CompletedQuests)
