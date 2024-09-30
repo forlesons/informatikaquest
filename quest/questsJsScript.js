@@ -80,7 +80,7 @@ document.getElementById("CheckButton").onclick = function() {
       document.getElementById("QuestTwo").style.backgroundColor = "green"
       CompletedQuests[1] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value == "Процессор" && CompletedQuests[1] == "False) {
+    if (document.getElementById("InputFromQuest1").value == "Процессор" && CompletedQuests[2] == "False") {
       document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestTwo").style.backgroundColor = "green"
