@@ -133,9 +133,14 @@ document.getElementById("CheckButton").onclick = function() {
     }
     var SaveQuest = "";
 for (var i=0; i<9; i++) {
-    SaveQuest += CompletedQuests[i];
+    if (i < 8) {
+    SaveQuest += CompletedQuests[i] + ",";
+    }
+    if (i == 9) {
+        SaveQuest += CompletedQuests[i];
+    }
 }
 alert(SaveQuest)
-    setCookie('completedQuests', SaveQuest.repplace(",", "").replace("undefined", ""), {secure: true, 'max-age': 3600})
+    setCookie('completedQuests', SaveQuest.replace("undefined", ""), {secure: true, 'max-age': 3600})
 }
 alert(CompletedQuests)
