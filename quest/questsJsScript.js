@@ -134,11 +134,11 @@ document.getElementById("CheckButton").onclick = function() {
       CompletedQuests[8] = "True"
     }
     var SaveQuest = "";
-for (var i=0; i<10; i++) {
-    if (i < 8) {
+for (var i=0; i<9; i++) {
+    if (i < 7) {
     SaveQuest += CompletedQuests[i] + ",";
     }
-    if (i == 9) {
+    if (i == 8) {
         SaveQuest += CompletedQuests[i];
     }
 }
