@@ -117,13 +117,13 @@ document.getElementById("CheckButton").onclick = function() {
       //document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestSeven").style.backgroundColor = "green"
-      document.getElementById("QuestEiht").style.backgroundColor = "Black"
+      document.getElementById("QuestEight").style.backgroundColor = "Black"
         CompletedQuests[6] = "True"
     }
     if (document.getElementById("InputFromQuest1").value == "Системное по" && CompletedQuests[7] == "False") {
       //document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
-      document.getElementById("QuestEiht").style.backgroundColor = "green"
+      document.getElementById("QuestEight").style.backgroundColor = "green"
       document.getElementById("QuestNine").style.backgroundColor = "Black"
         CompletedQuests[7] = "True"
     }
