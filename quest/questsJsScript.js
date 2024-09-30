@@ -73,49 +73,57 @@ document.getElementById("CheckButton").onclick = function() {
       document.getElementById("VideocardImg").src = "quest/materinskayaplata.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestOne").style.backgroundColor = "green"
-      CompletedQuests[0] = "True"
+      document.getElementById("QuestTwo").style.backgroundColor = "Black"
+        CompletedQuests[0] = "True"
     }
     if (document.getElementById("InputFromQuest1").value == "Материнская плата" && CompletedQuests[1] == "False") {
       document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestTwo").style.backgroundColor = "green"
+        document.getElementById("QuestThree").style.backgroundColor = "Black"
       CompletedQuests[1] = "True"
     }
     if (document.getElementById("InputFromQuest1").value == "Процессор" && CompletedQuests[2] == "False") {
       document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestThree").style.backgroundColor = "green"
-      CompletedQuests[2] = "True"
+    document.getElementById("QuestFo").style.backgroundColor = "Black"
+        CompletedQuests[2] = "True"
     }
     if (document.getElementById("InputFromQuest1").value == ".html" && CompletedQuests[3] == "False") {
       //document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestFo").style.backgroundColor = "green"
-      CompletedQuests[3] = "True"
+      document.getElementById("QuestFive").style.backgroundColor = "Black"
+        CompletedQuests[3] = "True"
     }
     if (document.getElementById("InputFromQuest1").value == ".txt" && CompletedQuests[4] == "False") {
       //document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestFive").style.backgroundColor = "green"
-      CompletedQuests[4] = "True"
+      document.getElementById("QuestSix").style.backgroundColor = "Black"
+        CompletedQuests[4] = "True"
     }
     if (document.getElementById("InputFromQuest1").value == "Матеша.txt" && CompletedQuests[5] == "False") {
       //document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestSix").style.backgroundColor = "green"
-      CompletedQuests[5] = "True"
+      document.getElementById("QuestSeven").style.backgroundColor = "Black"
+        CompletedQuests[5] = "True"
     }
     if (document.getElementById("InputFromQuest1").value == "Прикладное по" && CompletedQuests[6] == "False") {
       //document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestSeven").style.backgroundColor = "green"
-      CompletedQuests[6] = "True"
+      document.getElementById("QuestEiht").style.backgroundColor = "Black"
+        CompletedQuests[6] = "True"
     }
     if (document.getElementById("InputFromQuest1").value == "Системное по" && CompletedQuests[7] == "False") {
       //document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestEiht").style.backgroundColor = "green"
-      CompletedQuests[7] = "True"
+      document.getElementById("QuestNine").style.backgroundColor = "Black"
+        CompletedQuests[7] = "True"
     }
     if (document.getElementById("InputFromQuest1").value == "система программирования" && CompletedQuests[8] == "False") {
       //document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
@@ -128,6 +136,6 @@ for (var i=0; i<9; i++) {
     SaveQuest += CompletedQuests[i];
 }
 alert(SaveQuest)
-    setCookie('completedQuests', SaveQuest, {secure: true, 'max-age': 3600})
+    setCookie('completedQuests', SaveQuest.repplace(",", "").replace("undefined", ""), {secure: true, 'max-age': 3600})
 }
 alert(CompletedQuests)
