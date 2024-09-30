@@ -1,4 +1,4 @@
-var CompletedQuests = new Array();
+var CompletedQuests = new Array("False","False","False","False","False","False","False","False","False",);
 
 function setCookie(name, value, options = {}) {
 
