@@ -36,6 +36,7 @@ function getCookie(name) {
 }
 
 try {
+    setCookie('completedQuests', CompletedQuests, {secure: true, 'max-age': 3600})
   for (var i=0; i<9; i++) {
   CompletedQuests[i] = getCookie("completedQuests").toString().split(",")[i];
   }
