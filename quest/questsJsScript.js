@@ -58,9 +58,11 @@ alert(CompletedQuests);
 if (CompletedQuests[0] == "True") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
     alert("ok")
+    document.getElementById("VideocardImg").src = "quest/materinskayaplata.jpg";
 }
 if (CompletedQuests[1] == "True") {
   document.getElementById("QuestTwo").style.backgroundColor = "green"
+document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
 }
 if (CompletedQuests[2] == "True") {
   document.getElementById("QuestThree").style.backgroundColor = "green"
