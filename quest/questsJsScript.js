@@ -81,7 +81,7 @@ document.getElementById("CheckButton").onclick = function() {
       CompletedQuests[1] = "True"
     }
     var SaveQuest = "";
-for (var i=0; i<0; i++) {
+for (var i=0; i<9; i++) {
     SaveQuest += CompletedQuests[i];
 }
 alert(SaveQuest)
