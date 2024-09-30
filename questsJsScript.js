@@ -74,4 +74,8 @@ document.getElementById("CheckButton").onclick = function() {
       CompletedQuests[1] = "True"
     }
 }
-alert(CompletedQuests)
+var saveQuests;
+for (var i=0;i<9;i++) {
+    saveQuests += CompletedQuests[i];
+}
+setCookie('completedQuests', saveQuests, {secure: true, 'max-age': 10000})
