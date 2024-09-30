@@ -68,7 +68,7 @@ document.getElementById("CheckButton").onclick = function() {
       CompletedQuests[0] = "True"
     }
     if (document.getElementById("InputFromQuest1").value == "Видеокарта" && CompletedQuests[0] == "True") {
-      //document.getElementById("VideocardImg").src = "materinskayaplata.jpg";
+      //document.getElementById("VideocardImg").src = "quest/materinskayaplata.jpg";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestOne").style.backgroundColor = "green"
       CompletedQuests[1] = "True"
