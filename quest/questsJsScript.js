@@ -95,7 +95,7 @@ if (CompletedQuests[8] == "True") {
 alert(getCookie("completedQuests"));
 
 document.getElementById("CheckButton").onclick = function() {
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "видеокарта" || CompletedQuests[0] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "видеокарта" && CompletedQuests[0] == "False") {
       document.getElementById("VideocardImg").src = "quest/materinskayaplata.jpg";
         document.getElementById("h1").textContent = "А это что?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
@@ -103,7 +103,7 @@ document.getElementById("CheckButton").onclick = function() {
       document.getElementById("QuestTwo").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[0] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "материнская плата" || CompletedQuests[1] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "материнская плата" && CompletedQuests[1] == "False") {
       document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
         document.getElementById("h1").textContent = "Что на счёт этого?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
@@ -111,7 +111,7 @@ document.getElementById("CheckButton").onclick = function() {
         document.getElementById("QuestThree").style.backgroundColor = "rgb(56, 56, 56)"
       CompletedQuests[1] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "процессор" || CompletedQuests[2] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "процессор" && CompletedQuests[2] == "False") {
       document.getElementById("VideocardImg").src = "quest/Site.html.png";
         document.getElementById("h1").textContent = "Есть файл Сайт.html, что в этом файле является расширением файла?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
@@ -119,7 +119,7 @@ document.getElementById("CheckButton").onclick = function() {
     document.getElementById("QuestFo").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[2] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "html" || CompletedQuests[3] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "html" && CompletedQuests[3] == "False") {
       document.getElementById("VideocardImg").src = "quest/Quests.txt.png";
         document.getElementById("h1").textContent = "Тоже самое но с Задания.txt";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
@@ -127,7 +127,7 @@ document.getElementById("CheckButton").onclick = function() {
       document.getElementById("QuestFive").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[3] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "txt" || CompletedQuests[4] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "txt" && CompletedQuests[4] == "False") {
       document.getElementById("VideocardImg").src = "quest/directories.png";
         document.getElementById("h1").textContent = "Укажите путь к файлу Матеша.txt(указывать сам файл также необходимо)";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
@@ -135,7 +135,7 @@ document.getElementById("CheckButton").onclick = function() {
       document.getElementById("QuestSix").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[4] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "C:\дз\матеша\Матеша.txt" || CompletedQuests[5] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "C:\дз\матеша\Матеша.txt" && CompletedQuests[5] == "False") {
       document.getElementById("VideocardImg").src = "quest/adobePhotoshop.png";
         document.getElementById("h1").textContent = "К какому программному обеспечению(по) относится эта программа?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
@@ -143,7 +143,7 @@ document.getElementById("CheckButton").onclick = function() {
       document.getElementById("QuestSeven").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[5] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "прикладное по" || CompletedQuests[6] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "прикладное по" && CompletedQuests[6] == "False") {
       document.getElementById("VideocardImg").src = "quest/win.png";
         document.getElementById("h1").textContent = "А эта к какому программному обеспечению(по) относится эта программа?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
@@ -151,7 +151,7 @@ document.getElementById("CheckButton").onclick = function() {
       document.getElementById("QuestEight").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[6] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "системное по" || CompletedQuests[7] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "системное по" && CompletedQuests[7] == "False") {
       document.getElementById("VideocardImg").src = "quest/vsCode.png";
         document.getElementById("h1").textContent = "Ну а это к какому программному обеспечению(по) относится эта программа?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
@@ -159,7 +159,7 @@ document.getElementById("CheckButton").onclick = function() {
       document.getElementById("QuestNine").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[7] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "система программирования" || CompletedQuests[8] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "система программирования" && CompletedQuests[8] == "False") {
       document.getElementById("VideocardImg").src = "quest/vsCode.png";
         document.getElementById("h1").textContent = "Молодцы, те кто не работал или много раз ошибался тот получит 2!!";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
