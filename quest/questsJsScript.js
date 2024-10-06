@@ -176,6 +176,10 @@ for (var i=0; i<9; i++) {
     }
 }
 
+
+alert(SaveQuest)
+    setCookie('completedQuests', SaveQuest.replace("undefined", "False"), {secure: true, 'max-age': 3600})
+}
 document.getElementById("QuestOne").onclick = function() {
   document.getElementById("VideocardImg").src = "quest/videocard.jpg";
   //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
@@ -229,9 +233,5 @@ document.getElementById("QuestNine").onclick = function() {
   //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
   document.getElementById("QuestNine").style.backgroundColor = "rgb(56, 56, 56)"
   CompletedQuests[8] = "False"
-}
-
-alert(SaveQuest)
-    setCookie('completedQuests', SaveQuest.replace("undefined", ""), {secure: true, 'max-age': 3600})
 }
 alert(CompletedQuests)
