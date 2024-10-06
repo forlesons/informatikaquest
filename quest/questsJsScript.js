@@ -1,4 +1,4 @@
-var CompletedQuests = new Array("False","False","False","False","False","False","False","False","False");
+ var CompletedQuests = new Array("False","False","False","False","False","False","False","False","False");
 
 function setCookie(name, value, options = {}) {
 
@@ -97,6 +97,7 @@ alert(getCookie("completedQuests"));
 document.getElementById("CheckButton").onclick = function() {
     if (document.getElementById("InputFromQuest1").value.toLowerCase() == "видеокарта" && CompletedQuests[0] == "False") {
       document.getElementById("VideocardImg").src = "quest/materinskayaplata.jpg";
+        document.getElementById("h1").src = "А это что?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestOne").style.backgroundColor = "green"
       document.getElementById("QuestTwo").style.backgroundColor = "rgb(56, 56, 56)"
@@ -104,6 +105,7 @@ document.getElementById("CheckButton").onclick = function() {
     }
     if (document.getElementById("InputFromQuest1").value.toLowerCase() == "материнская плата" && CompletedQuests[1] == "False") {
       document.getElementById("VideocardImg").src = "quest/port-it_338-bjec-1000x1000.jpg";
+        document.getElementById("h1").src = "Что на счёт этого?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestTwo").style.backgroundColor = "green"
         document.getElementById("QuestThree").style.backgroundColor = "rgb(56, 56, 56)"
@@ -111,6 +113,7 @@ document.getElementById("CheckButton").onclick = function() {
     }
     if (document.getElementById("InputFromQuest1").value.toLowerCase() == "процессор" && CompletedQuests[2] == "False") {
       document.getElementById("VideocardImg").src = "quest/Site.html.png";
+        document.getElementById("h1").src = "Есть файл Сайт.html, что в этом файле является расширением файла?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestThree").style.backgroundColor = "green"
     document.getElementById("QuestFo").style.backgroundColor = "rgb(56, 56, 56)"
@@ -118,6 +121,7 @@ document.getElementById("CheckButton").onclick = function() {
     }
     if (document.getElementById("InputFromQuest1").value.toLowerCase() == "html" && CompletedQuests[3] == "False") {
       document.getElementById("VideocardImg").src = "quest/Quests.txt.png";
+        document.getElementById("h1").src = "Тоже самое но с Задания.txt";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestFo").style.backgroundColor = "green"
       document.getElementById("QuestFive").style.backgroundColor = "rgb(56, 56, 56)"
@@ -125,13 +129,15 @@ document.getElementById("CheckButton").onclick = function() {
     }
     if (document.getElementById("InputFromQuest1").value.toLowerCase() == "txt" && CompletedQuests[4] == "False") {
       document.getElementById("VideocardImg").src = "quest/directories.png";
+        document.getElementById("h1").src = "Укажите путь к файлу Матеша.txt(указывать сам файл также необходимо)";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestFive").style.backgroundColor = "green"
       document.getElementById("QuestSix").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[4] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "матеша.txt" && CompletedQuests[5] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "C:\дз\матеша\Матеша.txt" && CompletedQuests[5] == "False") {
       document.getElementById("VideocardImg").src = "quest/adobePhotoshop.png";
+        document.getElementById("h1").src = "К какому программному обеспечению(по) относится эта программа?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestSix").style.backgroundColor = "green"
       document.getElementById("QuestSeven").style.backgroundColor = "rgb(56, 56, 56)"
@@ -139,6 +145,7 @@ document.getElementById("CheckButton").onclick = function() {
     }
     if (document.getElementById("InputFromQuest1").value.toLowerCase() == "прикладное по" && CompletedQuests[6] == "False") {
       document.getElementById("VideocardImg").src = "quest/win.png";
+        document.getElementById("h1").src = "А эта к какому программному обеспечению(по) относится эта программа?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestSeven").style.backgroundColor = "green"
       document.getElementById("QuestEight").style.backgroundColor = "rgb(56, 56, 56)"
@@ -146,6 +153,7 @@ document.getElementById("CheckButton").onclick = function() {
     }
     if (document.getElementById("InputFromQuest1").value.toLowerCase() == "системное по" && CompletedQuests[7] == "False") {
       document.getElementById("VideocardImg").src = "quest/vsCode.png";
+        document.getElementById("h1").src = "Ну а это к какому программному обеспечению(по) относится эта программа?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestEight").style.backgroundColor = "green"
       document.getElementById("QuestNine").style.backgroundColor = "rgb(56, 56, 56)"
@@ -153,6 +161,7 @@ document.getElementById("CheckButton").onclick = function() {
     }
     if (document.getElementById("InputFromQuest1").value.toLowerCase() == "система программирования" && CompletedQuests[8] == "False") {
       document.getElementById("VideocardImg").src = "quest/vsCode.png";
+        document.getElementById("h1").src = "Молодцы, те кто не работал или много раз ошибался тот получит 2!!";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
       document.getElementById("QuestNine").style.backgroundColor = "green"
       CompletedQuests[8] = "True"
