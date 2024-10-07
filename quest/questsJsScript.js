@@ -135,7 +135,7 @@ document.getElementById("CheckButton").onclick = function() {
       document.getElementById("QuestSix").style.backgroundColor = "rgb(56, 56, 56)"
         CompletedQuests[4] = "True"
     }
-    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "C:\дз\матеша\Матеша.txt" && CompletedQuests[5] == "False") {
+    if (document.getElementById("InputFromQuest1").value.toLowerCase() == "C:\школа\дз\матеша\Матеша.txt" && CompletedQuests[5] == "False") {
       document.getElementById("VideocardImg").src = "quest/adobePhotoshop.png";
         document.getElementById("h1").textContent = "К какому программному обеспечению(по) относится эта программа?";
       //setCookie('completedQuests', 'True,False,False,False,False,False,False,False,False', {secure: true, 'max-age': 3600})
