@@ -53,11 +53,11 @@ try {
 }
 
 
-alert(CompletedQuests);
+//alert(CompletedQuests);
 
 if (CompletedQuests[0] == "True") {
   document.getElementById("QuestOne").style.backgroundColor = "green"
-    alert("ok")
+    //alert("ok")
     document.getElementById("VideocardImg").src = "quest/materinskayaplata.jpg";
 }
 if (CompletedQuests[1] == "True") {
@@ -92,7 +92,7 @@ if (CompletedQuests[8] == "True") {
   document.getElementById("QuestNine").style.backgroundColor = "green"
 }
 
-alert(getCookie("completedQuests"));
+//alert(getCookie("completedQuests"));
 
 document.getElementById("CheckButton").onclick = function() {
     if (document.getElementById("InputFromQuest1").value.toLowerCase() == "видеокарта" && CompletedQuests[0] == "False") {
@@ -177,7 +177,7 @@ for (var i=0; i<9; i++) {
 }
 
 
-alert(SaveQuest)
+//alert(SaveQuest)
     setCookie('completedQuests', SaveQuest.replace("undefined", "False"), {secure: true, 'max-age': 3600})
 }
 document.getElementById("QuestOne").onclick = function() {
@@ -234,4 +234,4 @@ document.getElementById("QuestNine").onclick = function() {
   document.getElementById("QuestNine").style.backgroundColor = "rgb(56, 56, 56)"
   CompletedQuests[8] = "False"
 }
-alert(CompletedQuests)
+//alert(CompletedQuests)
